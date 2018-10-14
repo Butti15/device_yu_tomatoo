@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2014 The CyanogenMod Project
 #
@@ -15,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_tomato.mk
+    $(LOCAL_DIR)/du.mk
