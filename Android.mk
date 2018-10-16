@@ -19,31 +19,11 @@ ifeq ($(TARGET_DEVICE),tomato)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := MiXplorer
-LOCAL_SRC_FILES := extra/MiXplorer.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := MarkupGoogle
-LOCAL_SRC_FILES := extra/MarkupGoogle.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := PixelLauncher
-LOCAL_SRC_FILES := extra/PixelLauncher.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
-include $(BUILD_PREBUILT)
-
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := MiXplorer
+#LOCAL_SRC_FILES := extra/MiXplorer.apk
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_CERTIFICATE := PRESIGNED
+#include $(BUILD_PREBUILT)
