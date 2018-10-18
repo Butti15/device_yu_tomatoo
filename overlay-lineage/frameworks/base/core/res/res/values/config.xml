@@ -64,9 +64,9 @@
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
     -->
     <integer name="config_doubleTapOnHomeBehavior">0</integer>
- <!-- Enable Custom Button Brightness -->
-    <bool name="config_button_brightness_support">true</bool>
-     
+
+    <!-- Enable Custom Button Brightness -->
+    <bool name="config_button_brightness_support">true</bool>    
      
     <!-- Base "touch slop" value used by ViewConfiguration as a
          movement threshold where scrolling should begin. -->
@@ -83,8 +83,5 @@
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
-
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
   
 </resources>
