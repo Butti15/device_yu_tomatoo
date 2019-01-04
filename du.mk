@@ -26,8 +26,9 @@ PRODUCT_DEVICE := tomato
 
 #Fuck
 export KBUILD_BUILD_USER=Butti15
-export KBUILD_BUILD_HOST=Buttispot
+export KBUILD_BUILD_HOST=Kaizz
 
+VENDOR_SECURITY_PATCH := 2018-01-01
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
