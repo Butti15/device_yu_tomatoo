@@ -130,12 +130,6 @@ cm_charger_res_images \
 font_log.png \
 libhealthd.cm
 
-# Shims
-#PRODUCT_PACKAGES += \
- #   libshims_boringssl \
- #   libshims_camera \
- #   libshims_ims
-
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.cyanogen_8916
@@ -184,15 +178,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
-#Shims
-#TARGET_LD_SHIM_LIBS += \
- #      /system/vendor/lib64/lib-imsdpl.so|libshims_boringssl.so \
- #      /system/vendor/lib64/lib-imscamera.so|libshims_camera.so \
- #      /system/vendor/lib64/lib-imsvt.so|libshims_ims.so \
-
 #Camera Sounds
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camsounds/camera_click.ogg:system/product/media/audio/ui \
     $(LOCAL_PATH)/camsounds/camera_focus.ogg:system/product/media/audio/ui \
     $(LOCAL_PATH)/camsounds/VideoStop.ogg:system/product/media/audio/ui \
     $(LOCAL_PATH)/camsounds/VideoRecord.ogg:system/product/media/audio/ui
+
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
