@@ -19,6 +19,8 @@ $(call inherit-product, vendor/du/config/common.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
+#This is an tesat for git-pull !
+
 PRODUCT_NAME := du_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
