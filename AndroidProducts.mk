@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_tomato.mk
+    $(LOCAL_DIR)/lineage_tomato.mk

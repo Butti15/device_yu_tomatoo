@@ -15,14 +15,14 @@
 
 $(call inherit-product, device/yu/tomato/full_tomato.mk)
 
-# Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
-$(call inherit-product, vendor/rr/config/BoardConfigLineage.mk)
+# Inherit some common LAOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/BoardConfigLineage.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := rr_tomato
+PRODUCT_NAME := lineage_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
 PRODUCT_MODEL := AO5510
